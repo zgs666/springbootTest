@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.zgs.test.web_demo.dao.UserDao">
+    <resultMap id="BaseResultMap" type="com.zgs.test.web_demo.entity.User">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <id column="name" property="name" jdbcType="VARCHAR"/>
+        <id column="phone" property="phone" jdbcType="VARCHAR"/>
+        <id column="address" property="address" jdbcType="VARCHAR"/>
+        <id column="email" property="email" jdbcType="VARCHAR"/>
+        <id column="age" property="age" jdbcType="BIGINT"/>
+    </resultMap>
+
+    <select id="getUserById" parameterType="Integer" resultMap="BaseResultMap">
+        select * from user where id = #{id}
+    </select>
+
+    <select id="getAllUser" parameterType="Integer" resultMap="BaseResultMap">
+        select * from user where 1=1
+    </select>
+
+</mapper>

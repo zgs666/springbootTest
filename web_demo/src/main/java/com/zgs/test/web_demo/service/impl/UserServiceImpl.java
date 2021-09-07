@@ -52,6 +52,7 @@ public class UserServiceImpl implements UserService {
                 log.info("######JSON.toJSONString:"+JSON.toJSONString(userList)+"########################");
                 redisTemplate.opsForList().leftPush("userList", JSON.toJSONString(userList));
             }else {
+                log.info("############不从数据库读取####################");
                 log.info("############从redis读取+usersString:"+usersString+"############################");
                 userList = JSON.parseArray(usersString,User.class);
             }

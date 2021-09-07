@@ -8,6 +8,6 @@ public class RedisUtil {
     public String RedisOpsForListSubStr(String redisOpsForListStr){
         String redisOpsForListSubStr = redisOpsForListStr.substring(1,redisOpsForListStr.length()-1);
         return redisOpsForListSubStr;
-
     }
+
 }

@@ -1,6 +1,11 @@
 package com.zgs.test.web_demo.util;
 
+/**
+* @author zgs
+* @date 2021/11/11 16:34
+*/
 public enum ResultCode {
+    //状态
     SUCCESS(200,"交易成功"),
     FAIL(500,"交易失败");
 

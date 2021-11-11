@@ -12,7 +12,10 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import java.util.List;
 
-
+/**
+ * @author zgs
+ * @date 2021/11/11 16:33
+ */
 @RestController
 @Slf4j
 @RequestMapping("/user")

@@ -41,12 +41,6 @@
             <version>3.1.0</version>
             <scope>provided</scope>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>1.2.41</version>
-        </dependency>
         <!--spring boot单元测试-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -82,14 +76,6 @@
             <type>pom</type>
             <scope>compile</scope>
         </dependency>
-        <!--其他-->
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-alibaba-dependencies</artifactId>
-            <version>2.1.0.RELEASE</version>
-            <type>pom</type>
-            <scope>compile</scope>
-        </dependency>
         <!--jdbc-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -118,6 +104,21 @@
                     <artifactId>log4j</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+            <version>2.1.0.RELEASE</version>
+            <type>pom</type>
+            <scope>compile</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.41</version>
         </dependency>
         <!--日志-->
         <dependency>
@@ -152,7 +153,7 @@
             <artifactId>springfox-swagger-ui</artifactId>
             <version>2.9.2</version>
         </dependency>
-
+        <!--poi处理excel-->
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>

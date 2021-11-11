@@ -19,4 +19,8 @@
         select * from user where 1=1
     </select>
 
+    <insert id="addUser">
+        insert into user ( name, phone, address, email, age) value (#{name},#{phone},#{address},#{email},#{age})
+    </insert>
+
 </mapper>

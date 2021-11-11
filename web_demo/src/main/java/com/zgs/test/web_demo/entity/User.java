@@ -1,20 +1,11 @@
 package com.zgs.test.web_demo.entity;
 
 public class User {
-    private Integer id;
     private String name;
     private String phone;
     private String address;
     private String email;
     private Integer age;
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;
@@ -56,8 +47,7 @@ public class User {
         this.age = age;
     }
 
-    public User(Integer id, String name, String phone, String address, String email, Integer age) {
-        this.id = id;
+    public User(String name, String phone, String address, String email, Integer age) {
         this.name = name;
         this.phone = phone;
         this.address = address;
@@ -68,8 +58,7 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
+                "name='" + name + '\'' +
                 ", phone='" + phone + '\'' +
                 ", address='" + address + '\'' +
                 ", email='" + email + '\'' +

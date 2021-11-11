@@ -1,9 +1,9 @@
 server:
-  port: 8080
+  port: 8082
 
 spring:
   application:
-    name: cloud-payment-service
+    name: zgs.demo.test
   redis:
     host: 47.108.77.176
     port: 80
@@ -26,7 +26,7 @@ spring:
 #    username: guest
 #    password: guest
     #虚拟host 可以不设置,使用server默认host
-    virtual-host: JCcccHost
+#    virtual-host: JCcccHost
 
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
@@ -34,6 +34,10 @@ spring:
     url: jdbc:mysql://47.108.77.176:3306/db2019?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
     username: root
     password: root123456
+
+jasypt:
+  encryptor:
+    password: jasypt
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml

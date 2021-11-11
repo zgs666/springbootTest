@@ -12,11 +12,11 @@
     <property name="CONSOLE_LOG_PATTERN" value="${CONSOLE_LOG_PATTERN:-%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr(${PID:- }){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}}"/>
 
     <!-- 格式化输出：%date表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度 %msg：日志消息，%n是换行符-->
-    <property name="LOG_PATTERN" value="%date{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n" />
+    <property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS}|[%thread] %-5level %logger{36} - %msg%n" />
 
     <!-- 定义日志存储的路径，不要配置相对路径 -->
 <!--    <property name="FILE_PATH" value="/app/server/zgsProject/test/spring-log.%d{yyyy-MM-dd}.%i.log" />-->
-    <property name="FILE_PATH" value="/G:/TestDemo/LOG-WEB_DEMO/spring-log.%d{yyyy-MM-dd}.%i.log" />
+    <property name="FILE_PATH" value="C:/zhangguisong/springBootDemo/WEB_DEMO_LOG/spring-log.%d{yyyy-MM-dd}.%i.log" />
     <!-- 控制台输出日志 -->
     <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
         <!-- 日志级别过滤INFO以下 -->
@@ -54,7 +54,7 @@
     </appender>
 
     <!-- project default level -->
-    <logger name="net.sh.rgface.serive" level="ERROR" />
+    <logger name="net.sh.rgface.serive" level="INFO" />
 
     <!-- 日志输出级别 -->
     <root level="INFO">

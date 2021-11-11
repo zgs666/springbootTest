@@ -1,8 +1,8 @@
 package com.zgs.test.web_demo.util;
 
 public enum ResultCode {
-    Success(200,"交易成功"),
-    Fail(500,"交易失败");
+    SUCCESS(200,"交易成功"),
+    FAIL(500,"交易失败");
 
     private Integer Code;
     private String Msg;

@@ -1,4 +1,4 @@
-package com.zgs.test.web_demo.service.impl.test;
+package com.zgs.test.web_demo.test;
 
 import org.jasypt.properties.PropertyValueEncryptionUtils;
 import org.jasypt.util.text.BasicTextEncryptor;

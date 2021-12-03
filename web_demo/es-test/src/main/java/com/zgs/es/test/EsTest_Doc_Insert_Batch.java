@@ -24,9 +24,12 @@ public class EsTest_Doc_Insert_Batch {
         );
 
         BulkRequest bulkRequest = new BulkRequest();
-        bulkRequest.add(new IndexRequest().index("zgs").id("1001").source(XContentType.JSON,"name","张帅1"));
-        bulkRequest.add(new IndexRequest().index("zgs").id("1002").source(XContentType.JSON,"name","张帅2"));
-        bulkRequest.add(new IndexRequest().index("zgs").id("1003").source(XContentType.JSON,"name","张帅3"));
+        bulkRequest.add(new IndexRequest().index("zgs").id("1002").source(XContentType.JSON,"name","张帅1","age",20,"sex","男"));
+        bulkRequest.add(new IndexRequest().index("zgs").id("1003").source(XContentType.JSON,"name","张帅2","age",21,"sex","女"));
+        bulkRequest.add(new IndexRequest().index("zgs").id("1004").source(XContentType.JSON,"name","张帅3","age",22,"sex","男"));
+        bulkRequest.add(new IndexRequest().index("zgs").id("1005").source(XContentType.JSON,"name","张帅4","age",23,"sex","男"));
+        bulkRequest.add(new IndexRequest().index("zgs").id("1006").source(XContentType.JSON,"name","张帅5","age",24,"sex","女"));
+        bulkRequest.add(new IndexRequest().index("zgs").id("1007").source(XContentType.JSON,"name","张帅6","age",25,"sex","男"));
         BulkResponse response = client.bulk(bulkRequest, RequestOptions.DEFAULT);
         log.info("#########################"+response.getIngestTook());
         log.info("#########################"+response.getItems());

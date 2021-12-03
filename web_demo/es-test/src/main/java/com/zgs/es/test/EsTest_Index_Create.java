@@ -21,7 +21,7 @@ public class EsTest_Index_Create {
                 RestClient.builder(new HttpHost("localhost",9200,"http"))
         );
         //创建索引
-        CreateIndexRequest request = new CreateIndexRequest("zgs1");
+        CreateIndexRequest request = new CreateIndexRequest("zgs");
         CreateIndexResponse response = client.indices().create(request, RequestOptions.DEFAULT);
         log.info("-----------"+response.toString());
         boolean acknowledged = response.isAcknowledged();

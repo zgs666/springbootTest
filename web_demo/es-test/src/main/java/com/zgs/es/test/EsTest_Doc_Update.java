@@ -24,8 +24,8 @@ public class EsTest_Doc_Update {
         );
 
         UpdateRequest request = new UpdateRequest();
-        request.index("zgs").id("1001");
-        request.doc(XContentType.JSON,"name","张帅11");
+        request.index("zgs").id("1002");
+        request.doc(XContentType.JSON,"age","21");
         UpdateResponse response = client.update(request, RequestOptions.DEFAULT);
         log.info("###########################"+response.getGetResult());
         client.close();
